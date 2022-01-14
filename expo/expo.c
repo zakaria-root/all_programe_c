@@ -3,10 +3,10 @@
 #include <math.h>
 
 float expo(int x,int n){
-    float s =0;
+    float s = 1;
     int fact =1;
-    for (int i = 0; i <= n; i++)
-    {
+    for (int i = 1; i <= n; i++)
+    {.  fact *= i;
         s+=pow(x,i)/fact;
     }
     return s;
